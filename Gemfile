@@ -7,7 +7,7 @@ gem "rails", "~> 7.0.6"
 
 gem "faraday"
 
-gem "faraday-middleware"
+gem "faraday_middleware"
 
 gem "sprockets-rails"
 
