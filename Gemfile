@@ -5,9 +5,9 @@ ruby "2.7.4"
 
 gem "rails", "~> 7.0.6"
 
-gem "faraday"
+gem "faraday", "~> 1.0"
 
-gem "faraday_middleware"
+gem "faraday_middleware", "~> 1.2.0"
 
 gem "sprockets-rails"
 
@@ -22,6 +22,8 @@ gem "turbo-rails"
 gem "stimulus-rails"
 
 gem "jbuilder"
+
+gem "psych", "3.3.0"
 
 gem "redis", "~> 4.0"
 
