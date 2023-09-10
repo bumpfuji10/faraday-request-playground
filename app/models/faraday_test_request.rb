@@ -1,27 +1,27 @@
-class FaradayRequest
+class FaradayTestRequest
 
   def initialize(url = 'https://jsonplaceholder.typicode.com')
     @url = url
   end
 
   def title
-    response.body['title']
+    posts_response.body['title']
   end
 
   def body
-    response.body
+    posts_response.body
   end
 
   def headers
-    response.headers
+    posts_response.headers
   end
 
   def status
-    response.status
+    posts_response.status
   end
 
   def posts_response
-    response = connection.get('/posts/1')
+    @posts_response ||= connection.get('/posts/1')
   end
 
   def connection
