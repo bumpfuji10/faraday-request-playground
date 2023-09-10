@@ -12,4 +12,9 @@ class CatApiService
     response = @conn.get('images/search')
     JSON.parse(response.body).first
   end
+
+  def multiple_cat_images(count)
+    response = @conn.get('images/search', limit: count)
+    JSON.parse(response.body)
+  end
 end
