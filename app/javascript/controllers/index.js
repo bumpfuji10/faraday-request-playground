@@ -10,12 +10,4 @@ eagerLoadControllersFrom("controllers", application)
 // import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
 // lazyLoadControllersFrom("controllers", application)
 
-document.addEventListener("DOMContentLoaded", function() {
-  const reloadButton = document.getElementById("reload-button");
-
-  if (reloadButton) {
-    reloadButton.addEventListener("click", function() {
-      location.reload();
-    });
-  }
-});
+import './window_reload';
